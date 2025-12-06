@@ -402,14 +402,33 @@
     box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
 }
 
-/* Resume Specific */
+/* Resume Button (Circular) */
 .resume-btn {
-    font-size: 14px; /* smaller text */
-    font-weight: bold;
-    width: auto; 
-    padding: 0 20px; /* make it pill shape */
-    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: black;
+    transition: 0.3s;
 }
+
+/* Resume Hover = Sky Blue */
+.resume-btn:hover {
+    background: #00BFFF;
+    color: white;
+    transform: scale(1.15);
+    box-shadow: 0 0 20px rgba(255,255,255,0.9);
+}
+
+/* Icon inherits color properly */
+.resume-btn i {
+    color: inherit;
+}
+
 /* GitHub hover - light black */
 .github:hover {
     background: #333;   /* light black */
@@ -449,9 +468,7 @@
     transform: scale(1.15);
     box-shadow: 0 0 20px rgba(255,255,255,0.9);
 }
-.resume-btn i {
-    color: black;
-}
+
 
 
         /* About Section */
@@ -907,12 +924,11 @@ section {
         <i class="fab fa-linkedin-in"></i>
       </a>
       <!-- Resume -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
       <a href="https://drive.google.com/file/d/1rYLeG1J-qKMaA1tdHqRawAAdjcCcjmop/view?usp=sharing"
-       target="_blank"
-       class="icon-btn resume-btn">
-       <i class="fa fa-file"></i>
-      </a>
+      target="_blank"
+     class="icon-btn resume-btn">
+     <i class="fa-solid fa-file"></i>
+     </a> 
     </div>
   </div>
   <div class="emoji-container">
@@ -1204,6 +1220,7 @@ section {
 
 </body>
 </html>
+
 
 
 
