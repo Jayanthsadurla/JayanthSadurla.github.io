@@ -402,33 +402,34 @@
     box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
 }
 
-/* Resume Button (Circular with Text) */
+/* Resume Capsule Button */
 .resume-btn {
-    height: 50px;              /* same height as other icons */
-    padding: 0 28px;           /* width adjusts automatically */
-    border-radius: 40px;       /* egg/pill shape */
-    
+    height: 50px;              /* same height as your icons */
+    padding: 0 32px;           /* gives capsule width */
     background: white;
     color: black;
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
 
+    border-radius: 50px;       /* THIS creates the capsule shape */
     display: flex;
     align-items: center;
     justify-content: center;
 
-    box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
     transition: 0.3s ease;
+    white-space: nowrap;       /* keeps text on one line */
 }
 
-/* Hover → Sky Blue */
+/* Hover (Sky Blue) */
 .resume-btn:hover {
     background: #00BFFF;
     color: white;
-    transform: scale(1.1);
-    box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
+    transform: scale(1.08);
+    box-shadow: 0px 6px 15px rgba(0,0,0,0.5);
 }
+
 
 
 /* GitHub hover - light black */
@@ -1219,6 +1220,7 @@ section {
 
 </body>
 </html>
+
 
 
 
