@@ -468,6 +468,18 @@
     transform: scale(1.15);
     box-shadow: 0 0 20px rgba(255,255,255,0.9);
 }
+.resume-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-text {
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: underline;
+}
 
 
 
@@ -924,11 +936,14 @@ section {
         <i class="fab fa-linkedin-in"></i>
       </a>
       <!-- Resume -->
-      <a href="https://drive.google.com/file/d/1rYLeG1J-qKMaA1tdHqRawAAdjcCcjmop/view?usp=sharing"
-      target="_blank"
-     class="icon-btn resume-btn">
-     <i class="fa-solid fa-file"></i>
-     </a> 
+      <div class="resume-wrapper">
+       <a href="https://drive.google.com/file/d/1rYLeG1J-qKMaA1tdHqRawAAdjcCcjmop/view?usp=sharing"
+       target="_blank"
+       class="icon-btn resume-btn">
+      <i class="fa-solid fa-file"></i>
+     </a>
+      <span class="resume-text">My Resume</span>
+    </div>
     </div>
   </div>
   <div class="emoji-container">
@@ -1220,6 +1235,7 @@ section {
 
 </body>
 </html>
+
 
 
 
