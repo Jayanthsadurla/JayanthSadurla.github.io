@@ -404,37 +404,32 @@
 
 /* Resume Button (Circular with Text) */
 .resume-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 50px;              /* same height as other icons */
+    padding: 0 22px;           /* width adjusts automatically */
+    border-radius: 30px;       /* egg/pill shape */
     
-    width: 90px;               /* circle width */
-    height: 90px;              /* circle height */
-    border-radius: 50%;        /* makes it round */
-    
-    background: white;         /* normal state color */
-    color: black;              /* text color */
-    font-size: 14px;
-    font-weight: bold;
+    background: white;
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
     text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     box-shadow: 0px 4px 8px rgba(0,0,0,0.3);
     transition: 0.3s ease;
 }
 
-/* Hover = Sky Blue */
+/* Hover → Sky Blue */
 .resume-btn:hover {
     background: #00BFFF;
     color: white;
-    transform: scale(1.15);
-    box-shadow: 0 0 20px rgba(255,255,255,0.9);
+    transform: scale(1.1);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.5);
 }
 
-
-/* Icon inherits color properly */
-.resume-btn i {
-    color: inherit;
-}
 
 /* GitHub hover - light black */
 .github:hover {
@@ -1224,6 +1219,7 @@ section {
 
 </body>
 </html>
+
 
 
 
